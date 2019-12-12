@@ -46,3 +46,12 @@ end
 def sum_array(array)
   array.inject { |sum, n| sum +n }
 end
+def add_s(array)
+  array.collect do |element|
+    if element == "feet"
+     "feet"
+    else 
+      element.insert(element.length, "s")
+    end
+  end
+end
