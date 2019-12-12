@@ -43,3 +43,6 @@ new_array =[]
  end
  new_array
 end
+def sum_array(array)
+  array.inject { |sum, n| sum +n }
+end
